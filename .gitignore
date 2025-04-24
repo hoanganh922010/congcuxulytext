@@ -1,0 +1,32 @@
+# Loại bỏ thư mục build artifacts
+[Bb]in/
+[Oo]bj/
+
+# Loại bỏ thư mục và file cài đặt của Visual Studio
+.vs/
+*.suo
+*.user
+
+# Loại bỏ kết quả build/test và log
+[Rr]elease/
+[Dd]ebug/
+TestResult*/
+BuildLog.*
+*.VisualState.xml
+*.[Tt]log/
+
+# Các file tạm, backup
+*.bak
+*.tmp
+*.[Cc]ache
+
+# Các file hệ điều hành
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rider specific (nếu dùng)
+.idea/
+
+# VS Code specific (nếu dùng)
+.vscode/
