@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace chuonglap
+=======
+﻿namespace chuonglap // Đảm bảo khớp namespace
+>>>>>>> 2198815 (commit message)
 {
     partial class Form1
     {
@@ -11,6 +15,7 @@
         }
 
         #region Windows Form Designer generated code
+<<<<<<< HEAD
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -228,5 +233,171 @@
         private Label label3;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
+=======
+
+        private void InitializeComponent()
+        {
+            this.txtInputFile = new System.Windows.Forms.TextBox();
+            this.btnBrowseInput = new System.Windows.Forms.Button();
+            this.txtOutputFile = new System.Windows.Forms.TextBox();
+            this.btnBrowseOutput = new System.Windows.Forms.Button();
+            this.cmbEncoding = new System.Windows.Forms.ComboBox();
+            this.txtInputFormat = new System.Windows.Forms.TextBox();
+            this.btnProcess = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.labelInputFile = new System.Windows.Forms.Label();
+            this.labelOutputFile = new System.Windows.Forms.Label();
+            this.labelEncoding = new System.Windows.Forms.Label();
+            this.labelInputFormat = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+
+            // --- Bỏ hoàn toàn khai báo và cấu hình cho: ---
+            // this.chkStandardizeChapter
+            // this.chkFilterJunk
+            // this.chkRemoveDuplicates
+            // this.groupBoxOptions
+            // ---
+
+            // labelInputFile
+            this.labelInputFile.AutoSize = true;
+            this.labelInputFile.Location = new System.Drawing.Point(12, 15);
+            this.labelInputFile.Name = "labelInputFile";
+            this.labelInputFile.Size = new System.Drawing.Size(54, 13);
+            this.labelInputFile.TabIndex = 0;
+            this.labelInputFile.Text = "File Input:";
+
+            // txtInputFile
+            this.txtInputFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInputFile.Location = new System.Drawing.Point(90, 12); // Điều chỉnh vị trí
+            this.txtInputFile.Name = "txtInputFile";
+            this.txtInputFile.Size = new System.Drawing.Size(315, 20); // Điều chỉnh kích thước
+            this.txtInputFile.TabIndex = 1;
+
+            // btnBrowseInput
+            this.btnBrowseInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowseInput.Location = new System.Drawing.Point(415, 10); // Điều chỉnh vị trí
+            this.btnBrowseInput.Name = "btnBrowseInput";
+            this.btnBrowseInput.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseInput.TabIndex = 2;
+            this.btnBrowseInput.Text = "Chọn...";
+            this.btnBrowseInput.UseVisualStyleBackColor = true;
+
+            // labelOutputFile
+            this.labelOutputFile.AutoSize = true;
+            this.labelOutputFile.Location = new System.Drawing.Point(12, 45);
+            this.labelOutputFile.Name = "labelOutputFile";
+            this.labelOutputFile.Size = new System.Drawing.Size(62, 13);
+            this.labelOutputFile.TabIndex = 3;
+            this.labelOutputFile.Text = "File Output:";
+
+            // txtOutputFile
+            this.txtOutputFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtOutputFile.Location = new System.Drawing.Point(90, 42); // Điều chỉnh vị trí
+            this.txtOutputFile.Name = "txtOutputFile";
+            this.txtOutputFile.Size = new System.Drawing.Size(315, 20); // Điều chỉnh kích thước
+            this.txtOutputFile.TabIndex = 4;
+
+            // btnBrowseOutput
+            this.btnBrowseOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowseOutput.Location = new System.Drawing.Point(415, 40); // Điều chỉnh vị trí
+            this.btnBrowseOutput.Name = "btnBrowseOutput";
+            this.btnBrowseOutput.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseOutput.TabIndex = 5;
+            this.btnBrowseOutput.Text = "Chọn...";
+            this.btnBrowseOutput.UseVisualStyleBackColor = true;
+
+            // labelEncoding
+            this.labelEncoding.AutoSize = true;
+            this.labelEncoding.Location = new System.Drawing.Point(12, 75);
+            this.labelEncoding.Name = "labelEncoding";
+            this.labelEncoding.Size = new System.Drawing.Size(55, 13);
+            this.labelEncoding.TabIndex = 6;
+            this.labelEncoding.Text = "Mã hóa:";
+
+            // cmbEncoding
+            this.cmbEncoding.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbEncoding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEncoding.FormattingEnabled = true;
+            this.cmbEncoding.Location = new System.Drawing.Point(90, 72); // Điều chỉnh vị trí
+            this.cmbEncoding.Name = "cmbEncoding";
+            this.cmbEncoding.Size = new System.Drawing.Size(315, 21); // Điều chỉnh kích thước
+            this.cmbEncoding.TabIndex = 7;
+
+            // labelInputFormat
+            this.labelInputFormat.AutoSize = true;
+            this.labelInputFormat.Location = new System.Drawing.Point(12, 105);
+            this.labelInputFormat.Name = "labelInputFormat";
+            this.labelInputFormat.Size = new System.Drawing.Size(72, 13); // Sửa Text nếu cần
+            this.labelInputFormat.TabIndex = 8;
+            this.labelInputFormat.Text = "Mẫu chương:";
+
+            // txtInputFormat
+            this.txtInputFormat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInputFormat.Location = new System.Drawing.Point(90, 102); // Điều chỉnh vị trí
+            this.txtInputFormat.Name = "txtInputFormat";
+            this.txtInputFormat.Size = new System.Drawing.Size(315, 20); // Điều chỉnh kích thước
+            this.txtInputFormat.TabIndex = 9;
+            this.txtInputFormat.Enabled = true; // Đảm bảo bật
+
+            // btnProcess
+            this.btnProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProcess.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcess.Location = new System.Drawing.Point(405, 140); // Điều chỉnh vị trí
+            this.btnProcess.Name = "btnProcess";
+            this.btnProcess.Size = new System.Drawing.Size(85, 35);
+            this.btnProcess.TabIndex = 10;
+            this.btnProcess.Text = "Xử Lý";
+            this.btnProcess.UseVisualStyleBackColor = true;
+
+            // lblStatus
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(12, 185); // Điều chỉnh vị trí
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(59, 13);
+            this.lblStatus.TabIndex = 11;
+            this.lblStatus.Text = "Trạng thái:";
+
+            // Form1
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(500, 215); // Điều chỉnh kích thước Form
+            this.Controls.Add(this.labelInputFormat); // Thêm các control vào Form
+            this.Controls.Add(this.txtInputFormat);
+            this.Controls.Add(this.labelEncoding);
+            this.Controls.Add(this.cmbEncoding);
+            this.Controls.Add(this.labelOutputFile);
+            this.Controls.Add(this.btnBrowseOutput);
+            this.Controls.Add(this.txtOutputFile);
+            this.Controls.Add(this.labelInputFile);
+            this.Controls.Add(this.btnBrowseInput);
+            this.Controls.Add(this.txtInputFile);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.btnProcess);
+            this.MinimumSize = new System.Drawing.Size(450, 250); // Điều chỉnh kích thước tối thiểu
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Công cụ xử lý chương";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        #endregion
+
+        // Khai báo biến control (đã loại bỏ các checkbox và groupbox)
+        private System.Windows.Forms.TextBox txtInputFile;
+        private System.Windows.Forms.Button btnBrowseInput;
+        private System.Windows.Forms.TextBox txtOutputFile;
+        private System.Windows.Forms.Button btnBrowseOutput;
+        private System.Windows.Forms.ComboBox cmbEncoding;
+        private System.Windows.Forms.TextBox txtInputFormat;
+        private System.Windows.Forms.Button btnProcess;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label labelInputFile;
+        private System.Windows.Forms.Label labelOutputFile;
+        private System.Windows.Forms.Label labelEncoding;
+        private System.Windows.Forms.Label labelInputFormat;
+        // Không còn: chkStandardizeChapter, chkFilterJunk, chkRemoveDuplicates, groupBoxOptions
+>>>>>>> 2198815 (commit message)
     }
 }
